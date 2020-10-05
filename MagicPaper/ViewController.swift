@@ -65,7 +65,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             
             let videoScene = SKScene(size: CGSize(width: 1920, height: 1080))
             
-            videoNode.position = CGPoint(x: <#T##CGFloat#>, y: <#T##CGFloat#>)
+            videoNode.position = CGPoint(x: videoScene.size.width/2, y: videoScene.size.height/2)
+            
+            videoNode.yScale = -1.0
             
             videoScene.addChild(videoNode)
             
